@@ -1,0 +1,111 @@
+* {
+    text-align: center;
+}
+
+body {
+    background: #4e4d4d;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+
+}
+
+@media screen and (min-width:576px) {
+    body {
+        background: #4e4d4d;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100vw;
+
+    }
+}
+
+@media screen and (min-width:992px) {
+    body {
+        background: #4e4d4d;
+        color: white;
+        display: grid;
+        grid-template-columns: 3fr 10fr;
+        width: 100vw;
+    }
+}
+
+nav {
+    padding: 20px 15%;
+}
+@media screen and (min-width:576px) {
+    nav {
+        padding: 20px 15%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    nav {
+        padding: 20px 15%;
+        border-right: solid 1px white;
+        height: 100vh;
+    }
+}
+
+nav section {
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+
+}
+
+nav div {
+    margin-bottom: 20px;
+}
+
+
+/* Propiedades */
+
+.propiedades {
+    padding: 0px 5%;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 45px;
+}
+@media screen and (min-width:576px) {
+    .propiedades {
+        padding: 0px 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .propiedades {
+        padding: 0px 5%;
+        margin-bottom: 12px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 45px
+    }
+}
+.propiedad {
+    margin: auto;
+    background: rgba(255, 255, 255, 0.068);
+    box-shadow: 0px 0px 7px 1px rgba(255, 255, 255, 0.39);
+
+}
+
+
+.propiedad .img {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.propiedad section {
+    padding: 10px 20px;
+}
+
+.propiedad section p {
+    margin: 0px
+}
